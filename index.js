@@ -97,4 +97,33 @@ export default class numbers{
             return 0; 
         }
     }
+    negativeExponant(base, expo){
+        if (typeof(base) != "number" || typeof(expo) != "number"){
+            throw new Error("not a number")
+        }
+        let target = 1 / Math.pow(base, expo)
+        console.log(target)
+        return 0
+    }
+    getCollatz(target){
+        if(typeof(target) != "number"){
+            throw new Error("not a number")
+        }
+        const nums = []
+        while(target != 1){
+            nums.push(target)
+            if(target % 2 == 0){
+                target = target / 2
+            }else{
+                target = (3 * target) + 1
+            }
+        }
+        nums.push(1)
+        let ans = ""
+        nums.forEach((e) => {
+            ans += e + " "
+        })
+        console.log(ans)
+        return 0
+    }
 }

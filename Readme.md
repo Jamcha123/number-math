@@ -22,3 +22,6 @@ Function description:
 5. changeBases(<integer>, <integer>) // Changes a given number to a given base like base2 01001 for example
 6. getFib(<integer>) // Gets the Fibonacci sequence within a given limit
 7. isAbundant(<integer>) // Is number abundant or deficient
+8. getCollatz(<integer>) // Gets the Collatz sequence ends at 1
+9. negativeExponent(<integer>, <integer>) // Gets the negative exponent of a given base and exponent
+ 
