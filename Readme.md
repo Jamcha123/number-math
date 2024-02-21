@@ -1,41 +1,37 @@
-cpoint.js is a JavaScript package that has already built pointers.
+number-math is a JavaScript math package.
 
-How to use:
-1. install cpoint.js
+How to use: 
+1.
 
-    ``` 
-        npm i cpoint.js
     ```
+            npm i number-math
+    ```
+2. 
 
-2. add the JS to your JS file: 
+    ```
+            import <anyname1> from './index.js'
+            const <anyname2> = new <anyname1>();
     
+            <anyname2>.somefunction();  
     ```
-        import point from './index.js'
-        const pointer = new point(); 
+Function description: 
+1. getFactorial(<integer>) // Gets the factorial of the number
 
-        pointer.<chose a function>(); 
-    ```
+2. isPrimes(<integer>) // Is the number a prime
 
-3. add the CSS to your CSS file
-    
-    ```
-        .items{
-            position: fixed; /* don't change fixed */
-            width: 3em;
-            height: 3em;
-            margin: auto;
-            padding: 0;
-            border: white solid 10px;
-            opacity: 0.25;
-            filter: drop-shadow(0px 0px 10px white);
-            background-color: transparent;
-        }
-    ```
+3. getFactors(<integer>) // Gets all of the factors of that number
 
+4. isRational(<integer>) // Is number Rational or Irrational 
 
-function description: 
-1. squarePointer() // gets a Square Pointer 
+5. changeBases(<integer>, <integer>) // Changes a given number to a given base like base2 01001 for example
 
-2. circlePointer() // gets a Circle Pointer
+6. getFib(<integer>) // Gets the Fibonacci sequence within a given limit
 
-enjoy the package
+7. isAbundant(<integer>) // Is number abundant or deficient
+
+8. getCollatz(<integer>) // Gets the Collatz sequence ends at 1
+
+9. negativeExponent(<integer>, <integer>) // Gets the negative exponent of a given base and exponent
+
+10. isInteresting(<integer>) // Is a number Interesting or Uninteresting, check out the Interesting number Paradox on Wikipedia
+[text](https://en.wikipedia.org/wiki/Interesting_number_paradox)
