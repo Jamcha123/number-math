@@ -16,12 +16,12 @@ export default class numbers{
         }
         for(let i = 2; i != (Math.pow(num, 0.5))+1; i++){
             if(num % i == 0){
-                console.log(num + " is a Prime number")
-                return 0
+                console.log(num + " Not a prime number")
+                return false
             }
         }
-        console.log("Not a prime")
-        return 0; 
+        console.log("A prime")
+        return true; 
     }
     getFactors(num){
         if(typeof(num) != "number"){
@@ -147,4 +147,14 @@ export default class numbers{
             powers += 1
         }
     }
+    floating(a, b){
+        if (Number.isInteger(a) == true || Number.isInteger(b) == true){
+            throw new Error("not a float")
+        }
+        let num1 = Math.floor((a + b) * 10) / 10
+        console.log(num1)
+        return 0
+    }
 }
+const myThing = new numbers()
+myThing.floating(0.1, 0.9)
