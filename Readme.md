@@ -37,3 +37,5 @@ Function description:
 [text](https://en.wikipedia.org/wiki/Interesting_number_paradox)
 
 11. floating(<float>, <float>) // This function will make it so 0.1 + 0.2 actually equals 0.3 and not 0.30000004
+
+12. isEven(<integer>) // is Number even or odd

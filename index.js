@@ -155,6 +155,17 @@ export default class numbers{
         console.log(num1)
         return 0
     }
+    isEven(target){
+        if(typeof(target) != "number"){
+            throw new Error("not a number")
+        }
+        if(Number.isInteger(target / 2) == true){
+            console.log("is even")
+        }else{
+            console.log("is odd")
+        }
+        return 0
+    }
 }
-const myThing = new numbers()
-myThing.floating(0.1, 0.9)
+const things = new numbers()
+things.isEven(3)
