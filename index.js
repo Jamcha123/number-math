@@ -1,8 +1,12 @@
+const error = (e) => {
+    if (typeof(e) != "number"){
+        throw new Error(e + " is not number")
+    }
+    return 0 + ", ignore this zero, just a little bit of error handling"
+}
 export default class numbers{
     getFactorial(num){
-        if(typeof(num) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num))
         let num1 = 1; 
         for(let i = 1; i != num+1; i++)[
             num1 *= i
@@ -11,9 +15,7 @@ export default class numbers{
         return 0
     }
     isPrimes(num){
-        if(typeof(num) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num))
         for(let i = 2; i != (Math.pow(num, 0.5))+1; i++){
             if(num % i == 0){
                 console.log(num + " Not a prime number")
@@ -24,9 +26,7 @@ export default class numbers{
         return true; 
     }
     getFactors(num){
-        if(typeof(num) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num))
         const arr = []
         for(let i = 1; i != num+1; i++){
             if(num %  i == 0){
@@ -42,9 +42,7 @@ export default class numbers{
         return 0
     }
     isRational(num){
-        if(typeof(num) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num))
         if (Math.floor(Math.sqrt(num)) == Math.sqrt(num)){
             console.log(num + " is a rational number")
             return 0
@@ -53,18 +51,15 @@ export default class numbers{
         return 0
     }
     changeBases(num, base){
-        if(typeof(num) != "number" || typeof(base) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num) + "\n")
+        console.log(error(base) + "\n")
         let num1 = num; 
         let num2 = num1.toString(base)
         console.log(num2)
         return 0
     }
     getFib(target){
-        if(typeof(target) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(target))
         const fib = (limit, x, y) => {
             console.log(y)
             if(limit == 0){
@@ -76,9 +71,7 @@ export default class numbers{
         return fib(target, 1, 1)
     }
     isAbundant(num){
-        if(typeof(num) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(num))
         let num1 = 0
         for(let i = 1; i != num; i++){
             if(num % i == 0){
@@ -94,17 +87,14 @@ export default class numbers{
         }
     }
     negativeExponant(base, expo){
-        if (typeof(base) != "number" || typeof(expo) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(base) + "\n")
+        console.log(error(expo) + "\n")
         let target = 1 / Math.pow(base, expo)
         console.log(target)
         return 0
     }
     getCollatz(target){
-        if(typeof(target) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(target) + "\n")
         const nums = []
         while(target != 1){
             nums.push(target)
@@ -123,9 +113,7 @@ export default class numbers{
         return 0
     }
     isInteresting(target){
-        if(typeof(target) != "number"){
-            throw new Error("not a number")
-        } 
+        console.log(error(target) + "\n")
         let num = target
         let text = num.toString()
         
@@ -156,9 +144,7 @@ export default class numbers{
         return 0
     }
     isEven(target){
-        if(typeof(target) != "number"){
-            throw new Error("not a number")
-        }
+        console.log(error(target) + "\n")
         if(Number.isInteger(target / 2) == true){
             console.log("is even")
         }else{
@@ -166,6 +152,31 @@ export default class numbers{
         }
         return 0
     }
+    pentagonNumbers(target){
+        console.log(error(target) + "\n")
+        let ans = " "
+        for(let i = 0; i != target; i++){
+            let pentagon = Math.floor(i * ((3 * i) - 1) / 2)
+            ans += pentagon + " "
+        }
+        console.log(ans)
+    }
+    triangleNumbers(target){
+        console.log(error(target) + "\n")
+        let ans = ""
+        for(let i = 0; i != target+1; i++){
+            let nums = Math.floor(i * (i + 1) / 2); 
+            ans += nums + " "; 
+        }
+        console.log(ans)
+    } 
+    repunitNumbers(target){
+        console.error(error(target) + "\n")
+        let ans = ""
+        for(let i = 0; i != target; i++){
+            ans += 1;
+        }
+        console.log(ans); 
+    }
+
 }
-const things = new numbers()
-things.isEven(3)

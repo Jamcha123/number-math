@@ -38,4 +38,10 @@ Function description:
 
 11. floating(<float>, <float>) // This function will make it so 0.1 + 0.2 actually equals 0.3 and not 0.30000004
 
-12. isEven(<integer>) // is Number even or odd
+12. isEven(<integer>) // Is Number even or odd
+
+13. pentagonNumber(target) // Gets a list of all pentagon numbers from 1 - target 
+
+14. repunitNumber(target) // Gets the repunit number of the given target
+
+15. triangleNumber(target) // Gets the list of all triangle number between 1 - target 
