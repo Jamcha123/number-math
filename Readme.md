@@ -45,3 +45,7 @@ Function description:
 14. repunitNumber(target) // Gets the repunit number of the given target
 
 15. triangleNumber(target) // Gets the list of all triangle number between 1 - target 
+
+16. fizz(target) // Gets the fizzbuzz sequence from 1 - target
+
+17. amicableNumber(target) // Is number amicable or not

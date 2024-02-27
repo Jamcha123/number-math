@@ -2,7 +2,6 @@ const error = (e) => {
     if (typeof(e) != "number"){
         throw new Error(e + " is not number")
     }
-    return 0 + ", ignore this zero, just a little bit of error handling"
 }
 export default class numbers{
     getFactorial(num){
@@ -178,5 +177,45 @@ export default class numbers{
         }
         console.log(ans); 
     }
-
+    fizz(target){
+        console.log(error(target))
+        let ans = ""
+        for(let i = 1; i != target+1; i++){
+            if(i % 3 == 0 && i % 5 == 0){
+                ans += "FizzBuzz" + " "
+            }
+            else if(i % 3 == 0){
+                ans += "Fizz" + " "
+            }
+            else if(i % 5 == 0){
+                ans += "Buzz" + " "
+            }
+            else{
+                ans += i + " "
+            }
+        }
+        console.log(ans)
+        return 0; 
+    }
+    amicableNumber(target){
+        console.log(error(target))
+        let num1 = 0
+        for(let i = 1; i != target; i++){
+            if(target % i == 0){
+                num1 += i
+            }
+        }
+        let num2 = 0; 
+        for(let i = 1; i != num1; i++){
+            if(num1 % i == 0){
+                num2 += i
+            }
+        }
+        if(num2 == target){
+            console.log(target + " is amicable")
+        }else{
+            console.log(target + " is not amicable")
+        }
+        return 0   
+    }
 }
