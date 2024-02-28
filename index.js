@@ -218,4 +218,19 @@ export default class numbers{
         }
         return 0   
     }
+    perfectNumber(target){
+        console.log(error(target))
+        let num1 = 0
+        for(let i = 1; i != target; i++){
+            if(target % i == 0){
+                num1 += i;  
+            }
+        }
+        if(num1 == target){
+            console.log(target + " is a perfect number"); 
+        }else{
+            console.log(target + " is not a perfect number"); 
+        }
+        return 0; 
+    }
 }

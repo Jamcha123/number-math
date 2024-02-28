@@ -49,3 +49,5 @@ Function description:
 16. fizz(target) // Gets the fizzbuzz sequence from 1 - target
 
 17. amicableNumber(target) // Is number amicable or not
+
+18. perfectNumber(target) // Is number perfect or not
