@@ -51,3 +51,7 @@ Function description:
 17. amicableNumber(target) // Is number amicable or not
 
 18. perfectNumber(target) // Is number perfect or not
+
+19. pythagoreanTriplets(targets) // Gets the products of the pythagorean triplets if there are any else return -1
+
+20. TruncatedNumbers(target) // remove the last digit of the number until only one remains, returns a list of all numbers
